@@ -8,6 +8,6 @@ Device: Emulator
 
 Testing: Working with minor code changes
 
-Picasso.with(context).load(imageUri).into(ivBasicImage); --> Picasso.with(this).load(imageUri).into(ivBasicImage);
+1. Picasso.with(context).load(imageUri).into(ivBasicImage); --> Picasso.with(this).load(imageUri).into(ivBasicImage);
 
-Removed finally --> Added in.close() in try{}
+2. Removed finally --> Added in.close() in try{}
