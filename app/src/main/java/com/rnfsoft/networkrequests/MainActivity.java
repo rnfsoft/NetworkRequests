@@ -33,7 +33,9 @@ public class MainActivity extends AppCompatActivity {
         ivBasicImageHard = (ImageView) findViewById(R.id.ivBasicImageHard);
 
         //Displaying Remote Images (The "Easy" Way)
-        Picasso.with(this).load(imageUri).into(ivBasicImageEasy);
+        Picasso.with(this).load(imageUri).fit().centerCrop()
+                .placeholder(R.drawable.user_placeholder)
+                .error(R.drawable.user_placeholder_error).into(ivBasicImageEasy);
 
         //Displaying Remote Images (The "Hard" Way)
         new ImageDownloadTask(ivBasicImageHard).execute(imageUri);
