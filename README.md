@@ -2,7 +2,9 @@
 
 Codes from https://guides.codepath.com/android/Sending-and-Managing-Network-Requests#displaying-remote-images-the-easy-way
 
-Duraion: 1 hr
+Time: 0.5 hr
+
+Level: 1/3
 
 Device: Emulator
 
